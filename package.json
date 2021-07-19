@@ -1,0 +1,20 @@
+{
+  "name": "single-price-grid-component",
+  "version": "1.0.0",
+  "description": "Challenge Frontend Mentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiscabezasdev/single-price-grid-component.git"
+  },
+  "keywords": [],
+  "author": "Luis Cabezas <luiscabezas25@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luiscabezasdev/single-price-grid-component/issues"
+  },
+  "homepage": "https://github.com/luiscabezasdev/single-price-grid-component#readme"
+}

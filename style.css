@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+:root {
+  --color-primary: hsl(179, 62%, 43%);
+  --color-primary-bright: hsl(71, 73%, 54%);
+  --color-neutral-light: hsl(204, 43%, 93%);
+  --color-neutral: hsl(218, 22%, 67%);
+  --color-white: white;
+  --font: 'Karla', sans-serif;
+}
+
+body {
+  background-color: var(--color-neutral-light);
+  font-family: var(--font);
+}
+
+.card__join {
+  background-color: var(--color-white);
+}
+
+.card__subscribe {
+  background-color: var(--color-primary);
+}
+
+.card__subscribe--btn {
+  background-color: var(--color-primary-bright);
+}
+
+.card__description {
+  background-color: var(--color-primary);
+}
