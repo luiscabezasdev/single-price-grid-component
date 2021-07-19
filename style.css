@@ -9,23 +9,92 @@
   --font: 'Karla', sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 650px;
+  height: 100vh;
+  margin: auto;
   background-color: var(--color-neutral-light);
   font-family: var(--font);
 }
 
+.card__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+}
+
 .card__join {
+  grid-column: 1 / 3;
+  padding: 40px;
   background-color: var(--color-white);
 }
 
+.card__title {
+  font-size: 20px;;
+  color: var(--color-primary);
+  padding-bottom: 20px;
+}
+
+.card__secundary {
+  color: var(--color-primary-bright);
+  font-size: 16px;
+  font-weight: 600;;
+  padding-bottom: 15px;
+}
+
+.card__content {
+  color: gray;
+  font-size: 15px;
+  line-height: 25px;
+}
+
 .card__subscribe {
+  padding: 40px;
   background-color: var(--color-primary);
+}
+
+.card__subscribe--title {
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.card__subscribe--price {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.card__subscribe--light {
+  padding-left: 15px;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .card__subscribe--btn {
   background-color: var(--color-primary-bright);
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  border: none;
+  color: var(--color-white);
+  font-weight: 600;
 }
 
 .card__description {
+  padding: 40px;
   background-color: var(--color-primary);
 }
