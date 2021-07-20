@@ -65,7 +65,7 @@ body {
 .card__subscribe--title {
   color: var(--color-white);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   padding-bottom: 15px;
 }
 
@@ -79,6 +79,7 @@ body {
 }
 
 .card__subscribe--light {
+  opacity: .5;
   padding-left: 15px;
   font-size: 12px;
   font-weight: 300;
@@ -92,9 +93,43 @@ body {
   border: none;
   color: var(--color-white);
   font-weight: 600;
+  border-radius: 5px;
 }
 
 .card__description {
   padding: 40px;
-  background-color: var(--color-primary);
+  background-color: rgba(42, 178, 175, .7);
+}
+
+.card__subscribe--description {
+  color: var(--color-white);
+  font-weight: 200;
+}
+
+.card__description--title {
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.card__description--details {
+  opacity: .6;
+  color: var(--color-white);
+  font-size: 14px;
+  padding-bottom: 3px;
+}
+
+@media (max-width: 380px) {
+  .card__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+  }
+
+  .card__join {
+    grid-column: 1 / 2;
+    padding: 40px;
+    background-color: var(--color-white);
+  }
 }
